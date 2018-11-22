@@ -1,4 +1,4 @@
- 
+#include <Arduino.h>
 #include <Wire.h>
 #include <Adafruit_PWMServoDriver.h>
 #include "SpiderServo.h"
@@ -10,15 +10,14 @@ SpiderServo forarm = SpiderServo(&pwm, 1);
 SpiderServo Shoulder = SpiderServo(&pwm, 2);
 SpiderServo bicep = SpiderServo(&pwm, 0);
 
-void setup() 
-{
+void setup() {
+  // put your setup code here, to run once:
   pwm.begin();
   pwm.setPWMFreq(FREQUENCY);
   forarm.SetAngle(90);
   Shoulder.SetAngle(90);
   bicep.SetAngle(90);
 }
-
 
 //forearm + is up 90 - 0
 //bicep + is down 0 90
@@ -28,10 +27,9 @@ void setup()
  int fstate[TOTALSTATES] = {60, 60, 20, 20};
  int bstate[TOTALSTATES] = {45, 120, 120, 45};
  int sstate[TOTALSTATES] = {90, 90, 90, 90};
- 
- 
 
 void loop() {
+  // put your main code here, to run repeatedly:
   forarm.Update();
   Shoulder.Update();
   bicep.Update();

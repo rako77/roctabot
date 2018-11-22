@@ -31,7 +31,6 @@ void SpiderServo::SetAngleSlow(int angle, int degreesPerSecond)
 {
     targetPulseWidth = pulseWidth(angle);
     operationStartTime = millis();
-    double pulseWidthPerMs;
     pulseWidthPerS = degreesPerSecond * (double)(pulseWidth(180)-pulseWidth(0)) / 180;
 }
 
