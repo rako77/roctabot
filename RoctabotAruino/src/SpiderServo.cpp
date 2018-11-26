@@ -10,6 +10,8 @@ SpiderServo::SpiderServo(Adafruit_PWMServoDriver *board, uint8_t servoSlot)
 {
     this->board = board;
     this->_servoSlot = servoSlot;
+    this->targetPulseWidth = 0;
+    this->previousPulseWidth = 0;
 }
 
 int SpiderServo::pulseWidth(int angle)
