@@ -12,15 +12,15 @@ void SpiderLeg::Initialize(Adafruit_PWMServoDriver *board, uint8_t forearmServoS
 void SpiderLeg::SetAngles(uint8_t forearmAngle, uint8_t bicepAngle, uint8_t shoulderAngle)
 {
     forearm.SetAngle(forearmAngle);
-    shoulder.SetAngle(bicepAngle);
-    bicep.SetAngle(shoulderAngle);
+    shoulder.SetAngle(shoulderAngle);
+    bicep.SetAngle(bicepAngle);
 }
 
 void SpiderLeg::SetAnglesSlow(uint8_t forearmAngle, uint8_t bicepAngle, uint8_t shoulderAngle, int degreesPerSecond)
 {
     forearm.SetAngleSlow(forearmAngle, degreesPerSecond);
-    shoulder.SetAngleSlow(bicepAngle, degreesPerSecond);
-    bicep.SetAngleSlow(shoulderAngle, degreesPerSecond);
+    shoulder.SetAngleSlow(shoulderAngle, degreesPerSecond);
+    bicep.SetAngleSlow(bicepAngle, degreesPerSecond);
 }
 
 void SpiderLeg::Update()
