@@ -1,3 +1,6 @@
+#ifndef SpiderServo_h
+#define SpiderServo_h
+
 #include <Adafruit_PWMServoDriver.h>
 
 #define FREQUENCY 50
@@ -12,7 +15,8 @@ class SpiderServo {
     double pulseWidthPerS;
 
     public:
-    SpiderServo(Adafruit_PWMServoDriver *board, uint8_t servoSlot);
+    SpiderServo();
+    void Initialize(Adafruit_PWMServoDriver *board, uint8_t servoSlot);
     void SetAngle(int angle);
     void SetAngleSlow(int angle, int degreesPerSecond);
     void Update();
@@ -21,3 +25,5 @@ class SpiderServo {
     private:
     int pulseWidth(int angle);
 };
+
+#endif

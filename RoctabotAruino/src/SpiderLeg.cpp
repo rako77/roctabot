@@ -1,10 +1,12 @@
 #include "SpiderLeg.h"
 
-SpiderLeg::SpiderLeg(Adafruit_PWMServoDriver *board, uint8_t forearmServoSlot, uint8_t bicepServoSlot, uint8_t shoulderServoSlot)
+SpiderLeg::SpiderLeg() { }
+
+void SpiderLeg::Initialize(Adafruit_PWMServoDriver *board, uint8_t forearmServoSlot, uint8_t bicepServoSlot, uint8_t shoulderServoSlot)
 {
-    forearm = SpiderServo(board, forearmServoSlot);
-    bicep = SpiderServo(board, bicepServoSlot);
-    shoulder = SpiderServo(board, shoulderServoSlot);
+    forearm.Initialize(board, forearmServoSlot);
+    bicep.Initialize(board, bicepServoSlot);
+    shoulder.Initialize(board, shoulderServoSlot);
 }
 
 void SpiderLeg::SetAngles(uint8_t forearmAngle, uint8_t bicepAngle, uint8_t shoulderAngle)

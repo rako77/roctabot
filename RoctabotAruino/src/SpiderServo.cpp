@@ -6,12 +6,15 @@
 #define MAX_PULSE_WIDTH 2500
 #define DEFAULT_PULSE_WIDTH 1500
 
-SpiderServo::SpiderServo(Adafruit_PWMServoDriver *board, uint8_t servoSlot)
+SpiderServo::SpiderServo()
 {
-    this->board = board;
-    this->_servoSlot = servoSlot;
     this->targetPulseWidth = 0;
     this->previousPulseWidth = 0;
+}
+
+void SpiderServo::Initialize(Adafruit_PWMServoDriver *board, uint8_t servoSlot) {
+    this->board = board;
+    this->_servoSlot = servoSlot;
 }
 
 int SpiderServo::pulseWidth(int angle)
