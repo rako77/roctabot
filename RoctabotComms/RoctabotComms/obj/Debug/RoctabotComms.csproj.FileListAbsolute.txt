@@ -1,0 +1,2 @@
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotComms\obj\Debug\RoctabotComms.csprojAssemblyReference.cache
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotComms\obj\Debug\RoctabotComms.csproj.CoreCompileInputs.cache

@@ -1,0 +1,10 @@
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\bin\Debug\RoctabotGUI.exe.config
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\bin\Debug\RoctabotGUI.exe
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\bin\Debug\RoctabotGUI.pdb
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\obj\Debug\RoctabotGUI.csprojAssemblyReference.cache
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\obj\Debug\RoctabotGUI.Form1.resources
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\obj\Debug\RoctabotGUI.Properties.Resources.resources
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\obj\Debug\RoctabotGUI.csproj.GenerateResource.cache
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\obj\Debug\RoctabotGUI.csproj.CoreCompileInputs.cache
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\obj\Debug\RoctabotGUI.exe
+C:\Users\rako_\source\repos\RoctabotComms\RoctabotGUI\obj\Debug\RoctabotGUI.pdb
